@@ -151,9 +151,12 @@ img {
 
 .hero {
   padding: 200px 0;
-
-  text-align: center;
   background-color: var(--backgound-accent-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
 }
 
 .hero .container {
@@ -194,10 +197,82 @@ img {
   cursor: pointer;
 }
 
+/* ----------benefits styles---------- */
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item::before {
+  display: block;
+  content: '';
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits-item {
+  width: 270px;
+}
+
+.benefits-text {
+  line-height: 1.71;
+  color: var(--secondary-color);
+}
+
+/* ----------about styles---------- */
+
+.about {
+  padding-top: 0;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-list {
+  display: flex;
+}
+
 /* ----------team styles---------- */
 
 .team-title,
-.about-title {
+.about-title,
+.regular-customers-title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -228,6 +303,8 @@ img {
 }
 
 .team-profession {
+  margin-bottom: 16px;
+
   color: var(--secondary-color);
 }
 
@@ -246,54 +323,51 @@ img {
   margin-right: 30px;
 }
 
-/* ----------about styles---------- */
-
-.about {
-  padding-top: 0;
-}
-
-.about-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.about-list {
+.contacts-list {
   display: flex;
 }
 
-/* ----------benefits styles---------- */
-
-.benefits-list {
-  display: flex;
+.member-networks-list {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
+.member-social-network {
+  display: block;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: transparent;
 }
 
-.benefits-title {
-  margin-bottom: 10px;
-
-  font-weight: 700;
-  font-size: inherit;
-  line-height: 1.14;
-  text-transform: uppercase;
+.member-social-network:hover {
+  background-color: var(--accent-color);
 }
 
-.benefits-item {
-  width: 270px;
+.social-network-logo:not(:last-child) {
+  margin-right: 10px;
 }
 
-.benefits-text {
-  line-height: 1.71;
-  color: var(--secondary-color);
-}
+/* ----------regular customers styles---------- */
 
 /* ----------footer styles---------- */
 
 .footer {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: var(--backgound-accent-color);
+  color: var(--contrast-text-color);
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.contacts-flex {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -302,19 +376,57 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-adress,
-.footer-logo {
-  color: var(--contrast-text-color);
+.footer-adress {
+  color: inherit;
 }
 
 .footer-contacts {
   text-align: left;
   line-height: 1.71;
+}
+
+.contacts-link {
   color: var(--footer-contacts);
 }
 
 .adress-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.join-us-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-social-network {
+  display: block;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-network:hover {
+  background-color: var(--accent-color);
+}
+
+.footer-instagram {
+  background-image: url(../images/instagram-logo.svg);
+}
+.footer-twitter {
+  background-image: url(../images/twitter-logo.svg);
+}
+.footer-facebook {
+  background-image: url(../images/facebook-logo.svg);
+}
+.footer-linkedin {
+  background-image: url(../images/linkedin-logo.svg);
 }
 
 /* ----------portfolio styles---------- */
@@ -347,6 +459,11 @@ img {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-color);
+}
+
+.example-item-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* ----------filter button styles---------- */
