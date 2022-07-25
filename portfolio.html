@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,30 +25,37 @@
           <a href="./index.html" class="logo link"><span class="logo-accent">Web</span>Studio</a>
           <ul class="main-nav list">
             <li class="nav-item">
-              <a href="./index.html" class="link active-link header-link">Студия</a>
+              <a href="./index.html" class="link active-link header-link">Студія</a>
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="link current active-link header-link"> Портфолио</a>
+              <a href="./portfolio.html" class="link current active-link header-link"> Портфоліо</a>
             </li>
             <li class="nav-item">
-              <a href="./test.html" class="link active-link header-link">Контакты</a>
+              <a href="./test.html" class="link active-link header-link">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="auth-nav list">
           <li class="auth-item">
-            <a href="mailto:info@devstudio.com" class="link auth-link active-link header-link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="link auth-link active-link header-link">
+              <svg class="envelope-icon">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="auth-item">
-            <a href="tel:+380961111111" class="link auth-link active-link header-link"
-              >+38 096 111 11 11</a
+            <a href="tel:+380961111111" class="link auth-link active-link header-link">
+              <svg class="smartphone-icon">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
       </div>
     </header>
+
     <main>
       <section class="examples section">
         <div class="container">
@@ -58,10 +65,10 @@
               <button type="button" class="btn filter-btn">Все</button>
             </li>
             <li class="filter-btn-item">
-              <button type="button" class="btn filter-btn">Веб-сайты</button>
+              <button type="button" class="btn filter-btn">Веб-сайти</button>
             </li>
             <li class="filter-btn-item">
-              <button type="button" class="btn filter-btn">Приложения</button>
+              <button type="button" class="btn filter-btn">Додатки</button>
             </li>
             <li class="filter-btn-item">
               <button type="button" class="btn filter-btn">Дизайн</button>
@@ -114,7 +121,7 @@
                   />
                   <div class="example-description">
                     <h2 class="examples-title">Ресторан Seafood</h2>
-                    <p class="examples-type">Приложение</p>
+                    <p class="examples-type">Додаток</p>
                   </div>
                 </a>
               </div>
@@ -136,7 +143,7 @@
                   <img src="./images/example-5.jpg" alt="2 коробки" width="370" height="294" />
                   <div class="example-description">
                     <h2 class="examples-title">Проект Boxes</h2>
-                    <p class="examples-type">Приложение</p>
+                    <p class="examples-type">Додаток</p>
                   </div>
                 </a>
               </div>
@@ -195,7 +202,7 @@
                   />
                   <div class="example-description">
                     <h2 class="examples-title">Growing Business</h2>
-                    <p class="examples-type">Приложение</p>
+                    <p class="examples-type">Додаток</p>
                   </div>
                 </a>
               </div>
@@ -219,7 +226,7 @@
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="link footer-adress"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="adress-item">
@@ -237,7 +244,7 @@
         </div>
 
         <div class="join-us-flex">
-          <p class="join-us-title">Присоединяйтесь</p>
+          <p class="join-us-title">Приєднуйтесь</p>
           <ul class="list contacts-list">
             <li class="social-network-logo">
               <a
@@ -245,8 +252,12 @@
                 aria-label="Логотип Инстаграм"
                 rel="noopener noreferrer nofollow"
                 target="_blank"
-                class="link footer-social-network footer-instagram"
-              ></a>
+                class="link footer-social-network"
+              >
+                <svg class="footer-link-logo">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-network-logo">
               <a
@@ -254,8 +265,12 @@
                 aria-label="Логотип Твиттер"
                 rel="noopener noreferrer nofollow"
                 target="_blank"
-                class="link footer-social-network footer-twitter"
-              ></a>
+                class="link footer-social-network"
+              >
+                <svg class="footer-link-logo">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-network-logo">
               <a
@@ -263,8 +278,12 @@
                 aria-label="Логотип Фэйсбук"
                 rel="noopener noreferrer nofollow"
                 target="_blank"
-                class="link footer-social-network footer-facebook"
-              ></a>
+                class="link footer-social-network"
+              >
+                <svg class="footer-link-logo">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-network-logo">
               <a
@@ -272,8 +291,12 @@
                 aria-label="Логотип ЛинкедИн"
                 rel="noopener noreferrer nofollow"
                 target="_blank"
-                class="link footer-social-network footer-linkedin"
-              ></a>
+                class="link footer-social-network"
+              >
+                <svg class="footer-link-logo">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>

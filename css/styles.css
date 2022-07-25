@@ -133,8 +133,28 @@ img {
   letter-spacing: 0.02em;
 }
 
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 16px;
+
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .auth-link {
+  display: flex;
+
   color: var(--secondary-color);
+  align-items: center;
+  justify-content: center;
 }
 
 .current,
@@ -203,33 +223,29 @@ img {
   display: flex;
 }
 
-.benefits-item::before {
-  display: block;
-  content: '';
+.icons-list {
+  display: flex;
+}
+
+.icon-background {
+  display: flex;
   width: 270px;
   height: 120px;
-  margin-bottom: 30px;
 
   background-color: var(--secondary-background-color);
+  margin-bottom: 30px;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.antenna::before {
-  background-image: url(../images/antenna.svg);
+.benefits-icon {
+  width: 70px;
+  height: 70px;
 }
 
-.clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.astronaut::before {
-  background-image: url(../images/astronaut.svg);
+.icon-background:not(:last-child) {
+  margin-right: 30px;
 }
 
 .benefits-item:not(:last-child) {
@@ -333,16 +349,27 @@ img {
 }
 
 .member-social-network {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
 
+  color: #afb1b8;
   border-radius: 50%;
   background-color: transparent;
+  align-items: center;
+  justify-content: center;
 }
 
 .member-social-network:hover {
   background-color: var(--accent-color);
+  color: var(--contrast-text-color);
+}
+
+.member-network-logo {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
 }
 
 .social-network-logo:not(:last-child) {
@@ -350,6 +377,40 @@ img {
 }
 
 /* ----------regular customers styles---------- */
+
+.regular-customers-list {
+  display: flex;
+}
+
+.regular-customers-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+
+  outline: 1px solid #afb1b8;
+  color: #afb1b8;
+  border-radius: 4px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.regular-customers-link:hover,
+.regular-customers-link:focus {
+  outline: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.regular-customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customer-logo {
+  width: 106px;
+  height: 60px;
+
+  fill: currentColor;
+}
 
 /* ----------footer styles---------- */
 
@@ -402,31 +463,25 @@ img {
 }
 
 .footer-social-network {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-social-network:hover {
   background-color: var(--accent-color);
 }
 
-.footer-instagram {
-  background-image: url(../images/instagram-logo.svg);
-}
-.footer-twitter {
-  background-image: url(../images/twitter-logo.svg);
-}
-.footer-facebook {
-  background-image: url(../images/facebook-logo.svg);
-}
-.footer-linkedin {
-  background-image: url(../images/linkedin-logo.svg);
+.footer-link-logo {
+  width: 20px;
+  height: 20px;
+
+  fill: var(--contrast-text-color);
 }
 
 /* ----------portfolio styles---------- */
